@@ -16,11 +16,11 @@ public class MainActivity extends Activity {
     }
 
     public void sayBoo(View view) {
-        TextView booText = (TextView)findViewById(R.id.message);
-        EditText name = (EditText)findViewById(R.id.editText);
+        TextView booText = findViewById(R.id.message);
+        EditText name = findViewById(R.id.editText);
         String nameValue = name.getText().toString();
         booText.setText("Happy Halloween " + nameValue + "!");
-        ImageView ghost = (ImageView)findViewById(R.id.imageView);
+        ImageView ghost = findViewById(R.id.imageView);
         ghost.setImageResource(R.drawable.ghost);
     }
 }
