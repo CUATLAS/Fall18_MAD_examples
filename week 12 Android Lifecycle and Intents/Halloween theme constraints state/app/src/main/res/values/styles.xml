@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Dark.ActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/background</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AutumnTheme" parent="android:Theme.Material.Light.DarkActionBar" >
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:colorAccent">@color/secondaryLightColor</item>
+        <item name="android:textColorPrimary">@color/secondaryDarkColor</item>
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+        <item name="android:colorBackground">@color/primaryColor</item>
+        <item name="android:colorButtonNormal">@color/primaryDarkColor</item>
+    </style>
+
+
+</resources>
