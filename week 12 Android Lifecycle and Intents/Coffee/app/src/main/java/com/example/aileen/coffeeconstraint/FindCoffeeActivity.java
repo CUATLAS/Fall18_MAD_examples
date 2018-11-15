@@ -17,7 +17,7 @@ public class FindCoffeeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_coffee);
         //get button
-        final Button button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
         //create listener
         View.OnClickListener onclick = new View.OnClickListener(){
             public void onClick(View view){
@@ -28,7 +28,7 @@ public class FindCoffeeActivity extends Activity {
         button.setOnClickListener(onclick);
     }
 
-    public void findCoffee(View view){
+    private void findCoffee(View view){
         //get spinner
         Spinner crowdSpinner = findViewById(R.id.spinner);
         //get spinner item array position

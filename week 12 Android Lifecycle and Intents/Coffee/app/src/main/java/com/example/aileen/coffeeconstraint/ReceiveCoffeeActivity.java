@@ -31,7 +31,7 @@ public class ReceiveCoffeeActivity extends Activity {
         messageView.setText("You should check out " + coffeeShop);
 
         //get image button
-        final ImageButton imageButton = findViewById(R.id.imageButton);
+        ImageButton imageButton = findViewById(R.id.imageButton);
         //create listener
         View.OnClickListener onclick = new View.OnClickListener(){
             public void onClick(View view){
@@ -43,7 +43,7 @@ public class ReceiveCoffeeActivity extends Activity {
         imageButton.setOnClickListener(onclick);
     }
 
-    public void loadWebSite(View view){
+    private void loadWebSite(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(coffeeShopURL));
         startActivity(intent);
